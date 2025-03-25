@@ -1,13 +1,16 @@
-import { Text } from '@chakra-ui/react';
 import { useState } from 'react';
+import GameGrid from './components/GameGrid';
+import GameContainer from './components/GameContainer';
+
+type GameAction = 'MAIN' | 'RULES' | 'REWARDS' | 'QUESTION'; 
 
 function App() {
-    const [count, setCount] = useState(0);
+    const [action, setAction] = useState<GameAction>('MAIN');
 
     return (
-        <>
-            <Text>Hello</Text>
-        </>
+        <GameContainer>
+            {action === 'MAIN' && <GameGrid />}
+        </GameContainer>
     );
 }
 
