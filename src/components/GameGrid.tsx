@@ -7,14 +7,12 @@ const GameGrid = () => {
                 <Heading>Who Wants To Be A Millionaire: Beatstar Edition</Heading>
             </GridItem>
             <GridItem padding={150}>
-                <VStack gap={4}>
-                    <Button colorPalette='blue' maxWidth='60px'>Start</Button>
-                    <Button colorPalette='blue'>Rules</Button>
+                <VStack gap={4} padding={5}>
+                    <Button colorPalette='blue' size='lg' width={75}>Start</Button>
+                    <Button colorPalette='blue' size='lg' width={75}>Rules</Button>
                 </VStack>
             </GridItem>
         </SimpleGrid>
-
-        // Install Bootstrap
     );
 };
 

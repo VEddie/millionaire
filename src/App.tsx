@@ -1,15 +1,10 @@
-import { useState } from 'react';
-import GameGrid from './components/GameGrid';
 import GameContainer from './components/GameContainer';
-
-type GameAction = 'MAIN' | 'RULES' | 'REWARDS' | 'QUESTION'; 
+import Rewards from './components/Rewards';
 
 function App() {
-    const [action, setAction] = useState<GameAction>('MAIN');
-
     return (
         <GameContainer>
-            {action === 'MAIN' && <GameGrid />}
+            <Rewards />
         </GameContainer>
     );
 }
